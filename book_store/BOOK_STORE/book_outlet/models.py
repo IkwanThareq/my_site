@@ -10,6 +10,7 @@ class Book(models.Model):
     #adding new field terus nanti di makemigration again
     author = models.CharField(null= True, max_length=100)
     is_bestselling = models.BooleanField(default= False)
+    slug = models.SlugField(_(""))
 
     ### method di bawah ini kita coba ovverideding si methodnya 
     # untuk manggil page yang akan kitabuat ###
